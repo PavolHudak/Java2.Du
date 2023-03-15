@@ -1,0 +1,21 @@
+package com.ness;
+
+import ij.ImagePlus;
+import ij.process.ImageProcessor;
+
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ImagePlus image = new ImagePlus("src/pic/picture.jpg");
+        ImageProcessor processor = image.getProcessor();
+
+        processor.setColor(new Color(236, 9, 9)); // Set the text color
+        processor.setFont(new Font("Arial", Font.PLAIN, 20)); // Set the font
+        processor.drawString("Ness Academy 2023", 50, 50); // Add the text
+
+        image.show();
+
+    }
+}
