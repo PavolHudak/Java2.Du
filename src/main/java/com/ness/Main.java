@@ -4,12 +4,8 @@ import ij.ImagePlus;
 import ij.io.FileSaver;
 import ij.process.ImageProcessor;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.imgscalr.Scalr;
-
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
+
 
 public class Main {
     public static void main(String[] args) {
